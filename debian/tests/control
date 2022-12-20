@@ -1,0 +1,4 @@
+Tests: libclutter-gst-3.0-dev
+Depends: build-essential,
+         libclutter-gst-3.0-dev,
+Restrictions: allow-stderr superficial

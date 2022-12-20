@@ -1,0 +1,3 @@
+version=4
+https://download.gnome.org/sources/clutter-gst/([123]\.[\d.]+)/ \
+	clutter-gst@ANY_VERSION@\.tar\.xz

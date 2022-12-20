@@ -1,0 +1,433 @@
+clutter-gst-3.0 (3.0.27-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 17:56:20 +0800
+
+clutter-gst-3.0 (3.0.27-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12
+  * Set debhelper-compat version in Build-Depends
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Name
+    (from ./configure), Repository, Repository-Browse
+
+  [ Simon McVittie ]
+  * Standards-Version: 4.5.0 (no changes required)
+  * Wrap and sort dependency lists (wrap-and-sort -a)
+  * Sort lists of installed files (wrap-and-sort -a)
+  * Add a superficial compile/link/run autopkgtest
+  * Drop build-dependencies on GStreamer documentation.
+    GStreamer documentation is not currently available in Debian due to
+    changes in how upstream publish it. Don't adjust cross-references to
+    point to a local copy. (Closes: #970739)
+  * d/control.in: Set Rules-Requires-Root to no
+
+ -- Simon McVittie <smcv@debian.org>  Thu, 24 Sep 2020 10:16:08 +0100
+
+clutter-gst-3.0 (3.0.27-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Mon, 04 Mar 2019 16:24:39 +0100
+
+clutter-gst-3.0 (3.0.26-2) unstable; urgency=medium
+
+  [ Simon McVittie ]
+  * gir1.2-clutter-gst-3.0: Add versioned Provides for the canonical
+    name gir1.2-cluttergst-3.0 for the package containing
+    ClutterGst-3.0.typelib
+
+  [ Jeremy Bicha ]
+  * Restore -Wl,-O1 to our LDFLAGS
+  * Bump Standards-Version to 4.3.0
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 23 Dec 2018 18:40:00 -0500
+
+clutter-gst-3.0 (3.0.26-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update Vcs fields for migration to https://salsa.debian.org/
+  * Bump debhelper compat to 11
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 18 Mar 2018 20:30:09 -0400
+
+clutter-gst-3.0 (3.0.24-2) unstable; urgency=medium
+
+  * Update Vcs fields for conversion to git
+  * Add debian/gbp.conf
+  * Bump debhelper compat to 10
+  * Bump Standards-Version to 4.1.2
+  * Update Multi-Arch metadata as recommended by the multiarch hinter
+
+ -- Jeremy Bicha <jbicha@debian.org>  Wed, 13 Dec 2017 20:23:17 -0500
+
+clutter-gst-3.0 (3.0.24-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 30 Mar 2017 16:10:05 +0200
+
+clutter-gst-3.0 (3.0.22-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 08 Dec 2016 22:45:18 +0100
+
+clutter-gst-3.0 (3.0.20-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Convert from cdbs to dh.
+  * Bump Standards-Version to 3.9.8.
+  * Generate the gtk-doc documentation during build. Add Build-Depends on
+    gtk-doc-tools and the necessary -doc packages for proper cross-references.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 10 Sep 2016 13:45:44 +0200
+
+clutter-gst-3.0 (3.0.18-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Thu, 24 Mar 2016 15:05:57 +0100
+
+clutter-gst-3.0 (3.0.16-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop libclutter-gst-3.0-dbg now that we have automatic dbgsym packages.
+  * Bump Standards-Version to 3.9.7.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 18 Feb 2016 15:39:47 +0100
+
+clutter-gst-3.0 (3.0.14-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 11 Oct 2015 15:59:09 +0200
+
+clutter-gst-3.0 (3.0.12-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 07 Oct 2015 20:42:59 +0200
+
+clutter-gst-3.0 (3.0.10-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 05 Sep 2015 01:11:36 +0200
+
+clutter-gst-3.0 (3.0.8-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 22 Jul 2015 01:03:59 +0200
+
+clutter-gst-3.0 (3.0.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump debhelper compatibility level to 9.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 01 Jul 2015 00:24:53 +0200
+
+clutter-gst-3.0 (3.0.4-1) unstable; urgency=medium
+
+  * Import updated package from ubuntu gnome3-staging PPA.
+    (3.0.4-0ubuntu1~vivid2)
+
+  [ Jackson Doak ]
+  * New upstream release.
+  * New package names as this is co-installable with clutter-gst-2.0
+  * Bump build deps on gstreamer, clutter
+  * Update symbols
+
+  [ Andreas Henriksson ]
+  * Install the gir/typelib files to multiarch compatible directory.
+  * Update debian/copyright
+  * Fix up Vcs-* urls for new version.
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/control.in:
+    + Mark gir1.2-clutter-gst-3.0 as multi-arch same.
+    + Standards-Version is 3.9.6.
+  * debian/libclutter-gst-3.0-0.symbols:
+    + Add Build-Depends-Package.
+  * debian/rules:
+    + Don't create a shlibs for the gstreamer plugin.
+    + Just set LDFLAGS directly, CDBS sets DEB_CONFIGURE_SCRIPT_ENV for
+      us. Also don't override the default LDFLAGS, but append to them
+      instead.
+  * debian/libclutter-gst-3.0-doc.links:
+    + Fix symlink in /usr/share/doc/$pkg.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 13 Jun 2015 13:51:21 +0200
+
+clutter-gst-2.0 (2.0.16-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Wed, 10 Jun 2015 18:08:45 +0200
+
+clutter-gst-2.0 (2.0.12-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Jackson Doak ]
+  * New upstream release
+  * debian/control: Bump gstreamer build-depends version to >= 1.2
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sat, 12 Jul 2014 14:59:09 +0200
+
+clutter-gst-2.0 (2.0.10-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Mon, 14 Apr 2014 20:13:16 +0200
+
+clutter-gst-2.0 (2.0.8-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 21 Sep 2013 20:41:04 +0200
+
+clutter-gst-2.0 (2.0.6-1) unstable; urgency=low
+
+  [ Iain Lane ]
+  * Add Build-Dep on libcogl-dev, per configure.ac.
+
+  [ Michael Biebl ]
+  * New upstream release.
+  * Upload to unstable.
+  * Bump Standards-Version to 3.9.4. No further changes.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 22 Aug 2013 23:33:12 +0200
+
+clutter-gst-2.0 (2.0.2-1) experimental; urgency=low
+
+  * New upstream release
+  * d/p/0001-cluttersink-Use-specific-shaders-based-on-the-curren.patch:
+    + Removed not required anymore
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 15 Mar 2013 23:56:38 +0100
+
+clutter-gst-2.0 (1.9.92-2) experimental; urgency=low
+
+  * d/p/0001-cluttersink-Use-specific-shaders-based-on-the-curren.patch:
+    + Added, fix AYUV shader when cogl is compiled with both GL and GLES2
+      support. (bgo: 682502)
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sat, 20 Oct 2012 17:53:28 +0200
+
+clutter-gst-2.0 (1.9.92-1) experimental; urgency=low
+
+  [ Iain Lane ]
+  * Update watch file to pick up only versions in this new series, including
+    unstable revisions.
+
+  [ Rico Tzschichholz ]
+  * New upstream release
+  * debian/control.in:
+    - Bump Build-deps on gstreamer1.0 libraries
+  * Update debian/copyright
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 05 Oct 2012 20:38:46 +0200
+
+clutter-gst-2.0 (1.9.90-1) experimental; urgency=low
+
+  [ Rico Tzschichholz ]
+  * New upstream release
+  * Update packaging for library name and depdendency changes
+
+  [ Sjoerd Simons ]
+  * Upload to experimental
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sat, 25 Aug 2012 17:00:39 +0200
+
+clutter-gst (1.6.0-1) experimental; urgency=low
+
+  * New upstream release
+  * debian/patches/01_fix_dolt_m4.patch
+    + Removed. Upstream no longer uses dolt
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Wed, 15 Aug 2012 10:52:19 +0200
+
+clutter-gst (1.5.4-2) experimental; urgency=low
+
+  * debian/control:
+  - force building with clutter and cogl >= 1.10.0
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Tue, 10 Apr 2012 12:15:39 -0300
+
+clutter-gst (1.5.4-1) unstable; urgency=low
+
+  [ Rico Tzschichholz ]
+  * New upstream release
+  * debian/control.in:
+    - Make libclutter-gst-dev depend on libclutter-1.0-dev
+
+  [ Jeremy Bicha ]
+  * debian/control.in: Standards-Version 3.9.3
+  * debian/libclutter-1.0-0.install:
+    - Install /usr/lib/gstreamer-0.10/libgstclutter.so
+  * debian/rules:
+    - Exclude libgstclutter from dh_mkshlibs
+
+  [ Laurent Bigonville ]
+  * Switch to multiarch policy
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sun, 01 Apr 2012 17:34:43 +0200
+
+clutter-gst (1.4.6-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Update repository URL.
+
+  [ Sjoerd Simons ]
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Wed, 18 Jan 2012 20:21:53 +0100
+
+clutter-gst (1.4.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Change section of gir1.2-clutter-gst-1.0 to introspection.
+  * debian/watch: Track .xz tarballs.
+  * Bump debhelper compatibility level to 8.
+    - Strip debian/tmp/ from .install files.
+    - Bump Build-Depends on debhelper.
+  * Bump Build-Depends on cdbs to ensure we have a version with
+    dh_girepository support.
+  * Set pkg-gnome-maintainers@lists.alioth.debian.org as Maintainer.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 16 Dec 2011 23:03:40 +0100
+
+clutter-gst (1.4.2-1) unstable; urgency=low
+
+  * New upstream release
+    - Explicitly add libcogl-dev to build-dependencies
+  * debian/libclutter-gst-1.0-0.symbols: Fix typo
+  * debian/rules:
+    - Always bump shlibs version, we are using .symbols file anyway
+    - Do not override GNOME_DOWNLOAD_URL URL anymore
+  * debian/watch: Update URL to download from GNOME mirror
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 06 Oct 2011 17:03:36 +0200
+
+clutter-gst (1.3.14-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/libclutter-gst-1.0-0.symbols: Updates
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 02 Sep 2011 12:05:21 +0200
+
+clutter-gst (1.3.12-2) unstable; urgency=low
+
+  * debian/patches/01_fix_dolt_m4.patch: Fix FTBFS on most arch
+    (Closes: #631647)
+  * debian/control.in:
+    - Add dh-autoreconf to the build-dependencies
+    - Bump Standards-Version to 3.9.2 (no further changes)
+    - Add Homepage and Vcs-* fields
+    - Drop duplicate Section
+  * debian/rules:
+    - Include autoreconf.mk and call dh_autoreconf with --as-needed
+  * debian/watch:
+    - Switch to .bz2 tarballs.
+    - Bump version to 3
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 28 Jul 2011 13:21:56 +0200
+
+clutter-gst (1.3.12-1) unstable; urgency=low
+
+  [ Ross Burton ]
+  * New upstream release.
+  * Remove gtk dependency from the -dev package.
+  * Update symbols
+
+  [ Josselin Mouette ]
+  * Make the -dev package depend on the gir package.
+
+ -- Ross Burton <ross@debian.org>  Mon, 06 Jun 2011 16:30:40 +0100
+
+clutter-gst (1.3.6-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/libclutter-gst-1.0-0.symbols: Updated
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 25 Mar 2011 19:47:09 +0000
+
+clutter-gst (1.3.4-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Tue, 25 Jan 2011 22:59:08 +0000
+
+clutter-gst (1.3.3~git20101215-1) experimental; urgency=low
+
+  * New upstream git snapshot (some nasty bugs were fixed after the release)
+  * debian/control.in: Conflict with libclutter-gst-0.10-dev
+  * Enable introspection support
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Wed, 15 Dec 2010 00:44:15 +0000
+
+clutter-gst-0.10 (0.10.0-2) unstable; urgency=low
+
+  * Switch to source format 3.0 (quilt).
+  * debian/patches/01_fix_ftbfs_with_new_clutter.patch:
+    - Fix FTBFS with clutter 1.2. Closes: #590352.
+  * debian/rules:
+    - Add a get-orig-source target with gnome-get-source.mk
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 11 Aug 2010 16:20:44 +0200
+
+clutter-gst-0.10 (0.10.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sat, 31 Oct 2009 18:35:58 +0000
+
+clutter-gst (0.8.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Rob Bradford <robster@debian.org>  Fri, 18 Jul 2008 15:38:20 +0100
+
+clutter-gst (0.6.1-1) unstable; urgency=low
+
+  * New upstream release.
+  - Switch away from deprecated substvars.
+  - Fix debian/copyright file.
+  - Make -dbg package prioriy extra.
+
+ -- Rob Bradford <robster@debian.org>  Mon, 18 Feb 2008 13:41:01 +0000
+
+clutter-gst (0.5.0-1) unstable; urgency=low
+
+  * New (unstable) upstream release.
+
+ -- Rob Bradford <robster@debian.org>  Thu, 17 Jan 2008 11:34:17 +0000
+
+clutter-gst (0.4.0-2) unstable; urgency=low
+
+  * Add missing dependency in the -dev package.
+
+ -- Ross Burton <ross@debian.org>  Wed,  8 Aug 2007 15:48:18 +0100
+
+clutter-gst (0.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Ross Burton <ross@debian.org>  Wed,  8 Aug 2007 15:03:05 +0100
+
+clutter-gst (0.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Ross Burton <ross@debian.org>  Mon, 19 Mar 2007 20:45:44 +0000
+
+clutter-gst (0.1.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Ross Burton <ross@debian.org>  Thu,  8 Feb 2007 14:31:18 +0000
